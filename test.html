@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body  {
+	    background: #000;
+	}
+
+	#container {
+	    position: relative;
+	    display: block;
+	    width: 300px;
+	    height: 500px;
+	    margin: auto;
+	    background: #FFFFCC;
+	    text-align: center;
+	    line-height: 40px;
+	}
+
+	.block {
+	    position: absolute;
+	    left: -100px;
+	    right: -100px;
+	    width: 100%;
+	    height: 100px;
+	    display: inline-block;
+	    /*margin: 20px auto;*/
+	    padding: 20px;
+	    border: 10px solid #FFCCCC;
+	    background: #CCCCFF;
+	}
+
+	#content-block {
+   		/*box-sizing: content-box;*/
+    	top: 40px;
+	}
+
+	#padding-block {
+	    top: 240px;
+	    /*box-sizing: padding-box;*/
+	}
+
+	#border-block {
+	    top: 340px;
+	    box-sizing: border-box;
+	}
+
+	#content-block-1 {
+	    display: block;
+	    height: 100%;
+	    background: #CCFFCC;
+	    line-height: 40px;
+	}
+	#padding-block-1 {
+	    display: block;
+	    height: 100%;
+	    background: #CCFFCC;
+	    line-height: 40px;
+	}
+	#border-block-1{
+	    display: block;
+	    height: 100%;
+	    background: #CCFFCC;
+	    line-height: 40px;
+	}
+	</style>
+</head>
+<body>
+	<div id="container">
+    <h4>Container</h4>
+    <div id="content-block" class="block">
+    	<div id="content-block-1">Content box</div>
+    </div>
+    <div id="padding-block" class="block">
+    	<div id="padding-block-1">Padding box</div>
+    </div>
+    <div id="border-block" class="block">
+    	<div id="border-block-1">Border box</div>
+    </div>
+</div>
+</body>
+</html>
