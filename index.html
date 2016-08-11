@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Latest compiled and minified CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
-
+	<!-- My css -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- jQuery library -->
 	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 
@@ -13,294 +14,7 @@
 	<script src="js/bootstrap.js"></script>
 
 	<title>Hello!! I'm Wesley Lin</title>
-	<style>
-		body{
-			background-color: #E9EBEE;
-			font-family: Arial, "Hiragino Sans GB", 冬青黑, "Microsoft YaHei", 微軟雅黑, Heiti, 黑體;
-			font-size: 16px;
-			line-height: 2.1;
-		}
-		#menubar.navbar {
-	      margin-bottom: 0px;
-  		}
-  		/*Profile*/
-		#profile { 
-		    color: #ffffff;
-		    background: url("images/bg.jpg");
-		    background-size:cover;
-		    padding-left: 0px;
-		    padding-right: 0px;
-		}
-		#profile .banner{ 
-		    background: url("images/dott.png")repeat 0px 0px;
-		    padding:20px 60px;
-		}
-		#profile .detail{
-			border-top: 1px solid #AFAFAF;
-		}
-		#profile .detail ul{
-			padding: 0px;
-			margin: 0px;
-		}
-		#profile .detail_text li{
-			display: inline-block;
-		}
-		#profile .detail_text li:nth-child(1){
-			width: 30%;
-			font-weight: bold;
-		}
-		/*About me*/
-		#aboutMe .pill_container{
-			background-color: #2f2f2f;
-			text-align: center;
-		}
-		#aboutMe .nav>li{ /*center*/
-			float:none;
-			display: inline-block;
-		}
-		#aboutMe .nav-pills>li.active>a,#aboutMe .nav-pills>li.active>a:focus,#aboutMe .nav-pills>li.active>a:hover {
-		    color: #fff;
-		    background-color: #3B5998;
-		}
-		#aboutMe .nav-pills>li{
-			width: 200px;
-			text-align: center;
-		}
-		#aboutMe .nav-pills>li>a {
-		    border-radius: 4px;
-		}
-		/*Education*/
-		#education .row{
-			margin-left: 60px;
-			border-left: 1px solid #999;
-		}
-		#education .row:hover .glyphicon{
-			color: #F7E612;
-			transform: scale(1.2);
-		}
-		#education .edu_left,#education .edu_right{
-			display:inline-block
-		}
-		#education .glyphicon{
-			color: #ffffff;
-			background: #3B5998;
-			padding: 10px;
-			border-radius: 70%;
-			transition: .3s all;
-			position: relative;
-			left: -20px;
-		}
-		#education .edu_range:before{
-			content: "";
-			width:0px;
-		    height:0px;
-		    border-width: 10px 20px 10px 10px;
-		    border-style:solid;
-		    border-color:transparent #3B5998 transparent transparent;
-		    position: absolute;
-		    margin-top: 10px;
-		    margin-left: -50px;
-		}
-		#education .edu_range{
-			background: #3B5998;
-			padding: 0.6em 1.2em;
-			color: #ffffff;
-		}
-		/*Experience*/
-		#experience .row{
-			margin-left: 60px;
-			border-left: 1px solid #999;
-		}
-		#experience .row:hover .glyphicon{
-			color: #F7E612;
-			transform: scale(1.2);
-		}
-		#experience .exp_left,#experience .exp_right{
-			display:inline-block
-		}
-		#experience .glyphicon{
-			color: #ffffff;
-			background: #3B5998;
-			padding: 10px;
-			border-radius: 70%;
-			transition: .3s all;
-			position: relative;
-			left: -20px;
-		}
-		#experience .exp_range:before{
-			content: "";
-			width:0px;
-		    height:0px;
-		    border-width: 10px 20px 10px 10px;
-		    border-style:solid;
-		    border-color:transparent #3B5998 transparent transparent;
-		    position: absolute;
-		    margin-top: 10px;
-		    margin-left: -50px;
-		}
-		#experience .exp_range{
-			background: #3B5998;
-			padding: 0.6em 1.2em;
-			color: #ffffff;
-		}
-		/*My Projects*/
-		#myProjects .carousel-indicators li {
-		    width: 18px;
-		    height: 18px;
-		    margin: 0px 5px -15px 5px;
-		    border: none;
-		    border-radius: 50%;
-		    background-color: #fff;
-		    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
-		}
-		#myProjects .carousel-indicators .active,#myProjects .carousel-indicators li:hover  {
-		    width: 18px;
-		    height: 18px;
-			background: -moz-linear-gradient(45deg, rgba(35,83,138,1) 0%, rgba(53,92,137,1) 48%, rgba(167,207,223,1) 100%); /* FF3.6-15 */
-			background: -webkit-linear-gradient(45deg, rgba(35,83,138,1) 0%,rgba(53,92,137,1) 48%,rgba(167,207,223,1) 100%); /* Chrome10-25,Safari5.1-6 */
-			background: linear-gradient(45deg, rgba(35,83,138,1) 0%,rgba(53,92,137,1) 48%,rgba(167,207,223,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		}
-		#myProjects .carousel-control.right,#myProjects .carousel-control.left {
-		    background-image: none;
-		    color: #3B5998;
-		}
-		#myProjects .carousel-caption span{
-			text-shadow: 0 0px 0px rgba(0,0,0,.0);
-			/*background-color: rgba(0,0,0,0.7);*/
-			background-color: rgba(35,83,138,0.7);
-			padding: 3px;
-		}
-		#myProjects .carousel-inner .item img, 
-		#myProjects .carousel-inner .item a img{
-			width: 80%; /* use this, or not */
-			margin: auto;
-		}
-		/*Hobbies*/
-		#hobbies .pill_container{
-			background-color: #2f2f2f;
-			text-align: center;
-		}
-		#hobbies .nav>li{ /*center*/
-			float:none;
-			display: inline-block;
-		}
-		#hobbies .nav-pills>li.active>a, #hobbies .nav-pills>li.active>a:focus, #hobbies .nav-pills>li.active>a:hover {
-		    color: #fff;
-		    background-color: #3B5998;
-		}
-		#hobbies .nav-pills>li{
-			width: 200px;
-			text-align: center;
-		}
-		#hobbies .nav-pills>li>a {
-		    border-radius: 4px;
-		}
-		#hobbies .thumbnail {
-		    text-align: center;
-		}
-		#hobbies .thumbnail p {
-		    margin-top: 15px;
-		}
-		#hobbies .thumbnail img{
-		    text-align: center;
-		}	
-		#aboutMe,#education,#experience,#myProjects,#hobbies{
-			padding-top: 20px;
-			padding-bottom: 20px;
-		}
-		#education .panel-group,#experience .panel-group{
-			margin-left: 40px;
-			margin-right: 100px;
-		}
-		#vimeo_video .close,#youtube_video .close,#modal_images .close{
-			position: absolute;
-			top:25px;
-			right: 25px;
-			width: 75px;
-			height: 75px;
-			background-color: transparent;
-			cursor: pointer;
-			z-index: 1;
-		}
-		#vimeo_video .close .lr,#youtube_video .close .lr,#modal_images .close .lr{
-			z-index: 1052;
-			width: 1px;
-			height: 75px;
-			background-color:#fff;
-			transform: rotate(45deg); 
-		}
-		#vimeo_video .close .rl,#youtube_video .close .rl,#modal_images .close .rl{
-			z-index: 1052;
-			width: 1px;
-			height: 75px;
-			background-color:#fff;
-			transform: rotate(90deg); 
-		}
-		#toTop{
-			text-decoration: none;
-			position: fixed;
-			bottom: 28px;
-			right: 1%;
-			overflow: hidden;
-			z-index: 999;
-			width: 32px;
-			height: 32px;
-			border: none;
-			text-indent: 100%;
-			background: url("images/arr.png");
-		}
-		footer{
-			padding-top: 50px;
-			padding-bottom: 50px;
-			background-color:#2f2f2f; 
-			color:#ffffff; 
-		}
-		.title{
-			margin-bottom: 40px;
-			text-align: center;
-		}
-		.title:after,.title:before{
-			content: "";
-			border: 4px double #c2c2c2;
-			width: 120px;
-			display: inline-block;
-			margin: 9px 10px;
-		}
-		/*Affix effect*/
-		.slideanim {visibility:hidden;}
-		.slide {
-		    /* The name of the animation */
-		    animation-name: slide;
-		    -webkit-animation-name: slide; 
-		    /* The duration of the animation */
-		    animation-duration: 1s; 
-		    -webkit-animation-duration: 1s;
-		    /* Make the element visible */
-		    visibility: visible; 
-		}
-
-		/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
-		@keyframes slide {
-		    0% {
-		        opacity: 0;
-		        -webkit-transform: translateY(70%);
-		    } 
-		    100% {
-		        opacity: 1;
-		        -webkit-transform: translateY(0%);
-		    } 
-		}
-		@-webkit-keyframes slide {
-		    0% {
-		        opacity: 0;
-		        -webkit-transform: translateY(70%);
-		    } 
-		    100% {
-		        opacity: 1;
-		        -webkit-transform: translateY(0%);
-		    }
-		}
-	</style>
+	
 	<script type="text/javascript">
 		// Video Modal
 		function setModalVimeoURL(elmnt){
@@ -336,13 +50,31 @@
 		// Image Modal
 		function setModalImagesURL(elmnt){
 			var url = "";
+			var memo = "";
 			if(elmnt.id=="img_graduate")
-				url="images/photoshop/graduate.jpg"
+			{
+				url = "images/photoshop/graduate.jpg";
+				memo = "高中畢業紀念冊";
+			}
 			else if(elmnt.id=="img_brochure")
-				url="images/photoshop/brochure.jpg"
+			{
+				url = "images/photoshop/brochure.jpg";
+				memo ="逢甲大學電視台招生說明手冊"
+			}
 			else if(elmnt.id=="img_index")
-				url="images/photoshop/index.jpg"
+			{
+				url = "images/photoshop/index.jpg";
+				memo = "陸雄機械產品手冊封面";
+			}
 			$("#modal_images img").attr("src", url);
+
+			var el = document.getElementById("img_memo");
+
+			if(el.hasChildNodes())
+				el.removeChild(el.childNodes[0]);
+			
+
+			el.insertAdjacentHTML("afterBegin","<p id='p_insert' style='color:#fff'>"+memo+"</p>");
 		}
 		// Affix effect
 		$(document).ready(function(){
@@ -401,7 +133,7 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
-					<li><a href="#aboutMe">背景</a></li>
+					<li><a href="#aboutMe">簡介</a></li>
 					<li><a href="#education">學歷</a></li>
 					<li><a href="#experience">經歷</a></li>
 					<li><a href="#myProjects">作品</a></li>
@@ -418,7 +150,7 @@
 					<img src="images/wesley.jpg" class="img-circle" style="width:100%; border:5px solid; border-color: #f1f1f1;">
 				</div>
 				<div class="col-sm-9" style="padding:20px 30px;">
-					<h1>Wesley Lin</h1>
+					<h1>林政元 Wesley</h1>
 					<div class="detail">
 						<ul class="detail_text">
 		                    <li>E-MAIL:</li>
@@ -431,11 +163,11 @@
 		                </ul>
 		                <ul class="detail_text">
 		                    <li>Familiar</li>
-		                    <li>JSP、Struts2、HTML、CSS</li>
+		                    <li>JSP、Struts2(MVC)、HTML、CSS</li>
 		                </ul>
 		                <ul class="detail_text">
 		                    <li>Beginner</li>
-		                    <li>Javascript、jQuery</li>
+		                    <li>Javascript、jQuery、ASP.net</li>
 		                </ul>
 					</div>
 				</div>
@@ -445,7 +177,7 @@
 	<div>
 		<!-- About me -->
 		<div class="container" id="aboutMe">
-			<h1 class="title">背景</h1>
+			<h1 class="title">簡介</h1>
 			<div class="pill_container">
 				<ul class="nav nav-pills">
 					<li class="active">
@@ -458,23 +190,14 @@
 			</div>
 			<div class="tab-content">
 				<div class="tab-pane fade in active" id="background">
-					<p>
-					您好，我是林政元，來自宜蘭縣五結鄉，畢業於逢甲大學資訊工程學系，家中共有四位成員，父母親、妹妹與我。父親於杏輝藥廠擔任警衛工作；母親在五結經營服飾店並兼顧家管；妹妹於雄獅旅遊擔任業務工作。
-					</p>
-					<p>
-					從小我隨父母親到處擺地攤賣衣服賺錢，父母親曾對我說過不管生活多麼辛苦，一定會讓我們完成大學教育，並期待我們這一代的孩子不再那麼辛苦。因此當我懂事時就希望能多賺些錢讓家人享福，雖然很傳統，但也影響我之後對生活勤奮與負責任的態度。在家中父親凡事創新、一定自己親手做事的態度，讓我從小就對科學與藝術特別感興趣；而母親不辭辛苦、無微不至的照顧，也讓我學習到做事要細心與凡事要多替別人著想。
-					</p>
+					<p>　　您好，我是林政元，來自宜蘭縣五結鄉，畢業於逢甲大學資訊工程學系，家中共有四位成員，父母親、妹妹與我。父親於杏輝藥廠擔任警衛工作；母親在經營服飾店並兼顧家管；妹妹於雄獅旅遊擔任業務工作。</p>
+					<p>　　從小隨父母親到處擺地攤賣衣服賺錢，父母親曾對我說過不管生活多麼辛苦，一定會讓我們完成大學學業，也期待著我們這一代的孩子不再那麼辛苦。因此當我懂事時就希望能培養多樣化的能力，未來可以回饋給家人，逐漸地養成事必躬親的態度。</p>
+					<p>　　在家中，我的父親擁有創新思維，喜歡創造不同事物，讓我從小就對科學與藝術特別感興趣；我的母親與客人、鄰居的友好關係，也讓我學習到如何做事細心、設身處地的著想。</p>
 				</div>
 				<div class="tab-pane fade" id="learning">
-					<p>
-					在求學期間，不論是學業或是任何作品雖然都有不錯的成績，但這也讓我反省出一昧地模仿即便是有稍作修改也會讓自己缺乏創意與創新能力，所以從此在任何事情都希望能想出與眾不同的見解來刺激自己的思維，不管在生活上、在課業上、在社團裡，都不希望自己個性被受限，也為了把自己塑造得更有彈性，謙虛聆聽他人的意見是必需的，爾後遭遇到各種的衝突下也改變自己的思考模式，並藉由失敗的經驗來改進自己，未來可以在社會上更能夠應對自如。
-					</p>
-					<p>
-					出社會後，為了豐富自己，除了一些線上的學習以外，也參加各種演講，但經濟的關係都是參加免費活動，不過我認為參加演講除了可以接收到講者的心路歷程外也可以很直接的接收到講者的生活態度，補足生活周遭的空乏。
-					</p>
-					<p>
-					第一份工作結束後，剛好有機會到澳洲Working Holiday，體驗為何大家都趨之若鶩的要到澳洲打工，不過跟我原來的認知不一樣，我所認識到大部分的背包客，努力賺錢的原因是為了享受下一次旅遊能更深刻的享受地景地貌，而不是真正的想存錢，這可能跟當地人的生活型態有關，因為對於當地人來說，生活才是人生的目的，不追求受物質上的享受。在澳洲期間，我在一家義大利人開的工廠上班，他們的工作態度令我震撼，不只追求速度更追求品質，精實的程度讓我一天下來猶如跑了半馬又做了400下伏地挺身，卻還要挨一身罵，但自虐的精神讓我撐過了這一年，在這工廠的工作態度是在澳洲這一年最大的收穫。
-					</p>
+					<p>　　求學期間，時常為求迅速而有模仿行為，卻也發現這會讓自己缺乏創意與創新能力，所以在任何事情都希望力求不同的見解來刺激自己的思維，也為了把自己塑造得更有彈性，謙虛聆聽他人的意見是必需的，並藉由失敗的經驗來改進自己，未來可以在社會上更能夠應對自如。</p>
+					<p>　　出社會後，除了一些線上的學習以外，也參加各種講習，但經濟的關係都是大多是小額或是免費活動，不過我認為參加演講除了可以接收到講者的心路歷程外也可以很直接的接收到講者的生活態度，除了知識以外也豐富自己的生活。</p>
+					<p>　　結束第一份工作後，剛好有機會到澳洲Working Holiday，我找到一家義大利人開的工廠上班，老闆的工作態度令我敬佩，不只追求速度也求品質，認真體會唯快不破的精神，精實的程度一天下來猶如跑了半馬又做了幾百下伏地挺身，途中不免還要受挨罵，但自虐的精神著實讓我撐過一年，不過在這工廠學習到的工作態度是在澳洲最大的收穫。</p>
 				</div>
 			</div>
 		</div>
@@ -543,7 +266,7 @@
 						</div>
 						<div class="panel-collapse collapse" id="exp_1_1">
 							<div class="panel-body">
-								出社會後第一份工作在零售業寶雅擔任工程師，選擇零售業是希望可以接觸到不同領域，原本剛進入的計畫是使用Oracle Jdeveloper開發新的ERP系統，但不久後計畫被腰斬，轉而使用公司所採購的訊光EEP2010使用Microsoft Visual Studio C#開發總務、工務、資訊三合一部門採購系統，進而開始學習C#之路，由於學習過Java的原因，學習C#沒有花太多的時間，困難的在於三部門需求的整合，由於一開始沒有意識到溝通的重要性導致第一次重做，第二次重做是沒意識到使用者不太了解自己的需求，最後一次在足夠的溝通下、也到分店現場觀察、再參考政府所使用的標案軟體，才設計出符合各種需求的系統。
+								　　出社會後第一份工作在零售業寶雅擔任工程師，選擇零售業是希望可以接觸到不同領域，原本應徵計畫是使用Oracle Jdeveloper開發新的ERP系統，但不久計畫腰斬，轉而使用公司所採購的訊光EEP2010使用MS Visual Studio .net(C#)開發總務、工務、資訊三合一部門採購系統，開啟學習C#之路，由於先前有Java的經驗，學習C#沒有花太多的時間，困難的在於三部門需求的整合，由於一開始沒有意識到溝通的重要性導致第一次重做，第二次重做是沒意識到使用者不太了解自己的需求，最後一次在足夠的溝通下、也到分店現場觀察、再參考政府所使用的標案軟體，才設計出符合各種需求的系統。
 							</div>
 						</div>
 					</div>
@@ -555,7 +278,7 @@
 						</div>
 						<div class="panel-collapse collapse" id="exp_1_2">
 							<div class="panel-body">
-								除了上述的系統，在職期間由於公司的EIP系統因公司成長不再符合使用，所以政策希望導入IBM Notes來解決此問題，因此成為此專案負責人對廠商的窗口，除了重新製作平常所使用的資訊頁面外，也要解決因員工成長導致人事作業上的壓力，所以把請假、加班、排班、未打卡、差旅分出來製作成員工可自行操作的頁面，除了與相關部門溝通釐清所有的作業流程外，還需要著手研究由Powerbuilder所寫的人事系統原始碼，重寫成procedure建立在Oracle資料庫裡，讓廠商只需照我寫的文件去按流程呼叫不需要花時間再寫一個新的人事系統與適應公司的資料庫，節省上線時間。
+								　　除了上述的系統，在職期間由於公司的EIP系統因公司成長不再符合使用，所以政策希望導入IBM Notes來解決人數及人事作業上的壓力，因此成為此專案負責人對廠商的窗口，重新製作平常所使用的資訊頁面、也把人事請假、加班、排班、未打卡、差旅分製作成員工可自行操作的頁面，除了與相關部門溝通釐清所有的作業流程外，也研究由Powerbuilder所寫的人事系統原始碼，重寫成procedure建立在Oracle資料庫裡，讓廠商只需照我寫的文件流程呼叫，節省寫一個新的人事系統與適應公司資料庫的時間。
 							</div>
 						</div>
 					</div>
@@ -567,7 +290,7 @@
 						</div>
 						<div class="panel-collapse collapse" id="exp_1_3">
 							<div class="panel-body">
-								在寶雅除了這兩大專案外，還有一些零星的瑣事，如賣場商品資料的資料庫更新、推行APP時會員資料的接口、更甚是維護電腦、無線網路、共用硬碟、投影機等等，雖然會拖延一些自己的時間，但對我來說每一樣遇到的事情都是學習機會值得去把握並創造未來契機，回想起剛進去時股價還是30塊的公司，離開再回首時已經是高不可攀的境界。
+								　　在寶雅除了上述專案外，還有一些零星的瑣事，如賣場商品資料的資料庫更新、推行APP時會員資料的接口、更甚是維護電腦、無線網路、共用硬碟、投影機等等，雖然會拖延一些自己的時間，但對我來說每一樣遇到的事情都是學習機會，回想起剛進去時股價還是30塊的公司，離開時已經是高不可攀的境界。
 							</div>
 						</div>
 					</div>
@@ -581,7 +304,7 @@
 					</h4>
 				</div>
 				<div class="exp_left">
-					<h4> 大學專題</h4>
+					<h4> 逢甲大學資訊工程 畢業專題</h4>
 				</div>
 				<div class="panel-group" id="exp_root_2">
 					<div class="panel panel-default">
@@ -592,7 +315,7 @@
 						</div>
 						<div class="panel-collapse collapse" id="exp_2_1">
 							<div class="panel-body">
-								大學畢業專題為crossbow所開發的sensor實做應用，在當時智慧手機尚未普的年代正流行的是RFID，但沒想到現今反而是sensor較為廣泛運用，不過當時對於未來的趨勢尚未明朗，我們不敢貿然下時間學習crossbow所開發語言nesC去控制sensor，所以我們決定利用Java來驅動sensor來實作這次的專題，把方向著重於Java學習、Java與硬體的結合，最後克服在沒有開放介接原始碼的情況下，寫usb接收程式去接收sensor傳來的資料，再配合原始資料做對照、過濾、解碼，最後結合視窗、資料庫與網頁成為我們的第一個軟體。
+								　　大學畢業專題為crossbow所開發的sensor實做應用，在當時智慧手機尚未普的年代正流行的是RFID，但沒想到現今反而是sensor較為廣泛運用，不過當時對於未來的趨勢尚未明朗，我們不敢貿然下時間學習crossbow所開發語言nesC去控制sensor，所以我們決定利用Java來驅動sensor實作專題，把方向著重於Java學習、Java與硬體的結合，最後克服在沒有開放連接原始碼的情況下，寫usb連接sensor接收傳來的資料，再配合資料做過濾解碼，最後結合視窗、資料庫與網頁成為我們的第一個軟體。
 							</div>
 						</div>
 					</div>
@@ -617,7 +340,7 @@
 						</div>
 						<div class="panel-collapse collapse" id="exp_3_1">
 							<div class="panel-body">
-								在求學期間應徵Kingnet網路公司的裝機工程師，很幸運難得能學習到大樓整體網路的建置方法、到客戶家中佈線安裝網路，雖然系上主學程為網際網路但這些經驗是無法在學校能夠學習到，除此之外也讓我更有經驗在人際關係上，與客戶的應對進退學習到很多。
+								　　在求學期間應徵Kingnet網路公司的裝機工程師，很幸運學習到大樓整體網路的建置方法、到客戶家中佈線安裝網路，雖然系上主學程為網際網路但這些經驗是無法在學校能夠學習到，此外也讓我有更多的經驗在與客戶的應對進退技巧。
 							</div>
 						</div>
 					</div>
@@ -721,7 +444,7 @@
 			</div>
 			<div class="tab-content">
 				<div class="tab-pane fade in active" id="video">
-					<p>在大學期間，我加入逢甲大學電視台志工社團，除了能了解業界新聞製作並製作校園新聞外，在任務方面能接觸許多學校大型表演、活動，在值班時間外也能製作屬於自己的作品，導演、編劇、攝影、剪輯、演員樣樣都可以接觸，作品也投稿比賽獲得了肯定，每一次累積的經驗在未來都有機會轉換成創意，深刻體會到創意是基礎的精進。</p>
+					<p>在大學期間加入逢甲大學電視台志工，除了能了解業界新聞製作並製作校園新聞外，也能接觸許多學校大型表演、活動，在值班時間外也能製作屬於自己的作品，嘗試做導演、編劇、攝影、剪輯、演員，而作品投稿比賽也有不錯的成績，每一次累積的經驗在未來都是自己的創意，也體會到創意是基礎的精進。</p>
 					<div class="row">
 						<div class="col-sm-3">
 							<div class="thumbnail">
@@ -768,7 +491,7 @@
 					</div>
 				</div>
 				<div class="tab-pane fade" id="photoshop">
-					<p>我喜歡畫圖、設計平面作品，除了設計海報、佈告欄，也設計畢業紀念冊，這也是奠定現在做任何設計時的想法基礎。</p>
+					<p>畫圖、設計平面作品是一直以來的興趣，海報、佈告欄、畢業紀念冊等等，這也是奠定現在做任何設計時的想法基礎。</p>
 					<div class="row">
 						<div class="col-sm-4">
 							<img src="images/photoshop/graduate_1.jpg" class="img-responsive"  data-toggle="modal" data-target="#modal_images" id="img_graduate" onclick="setModalImagesURL(this)">
@@ -782,7 +505,7 @@
 					</div>
 				</div>
 				<div class="tab-pane fade" id="sport">
-					<p>至於運動方面，我喜歡的是足球，在高中加入社團、在大學加入校隊，但出社會後礙於沒有場地的關係轉換成慢跑、爬山、戶外健身，在運動的過程中可以感受到痛苦驅使自己放棄，但唯有堅持下去才能養成堅毅的性格，相信喜歡運動的都能感受到這種自虐的精神。</p>
+					<p>運動方面，足球，在高中加入社團、在大學加入校隊，但出社會後礙於沒有場地的關係轉換成慢跑、爬山、戶外健身，在運動的過程中可以感受到煎熬，但結束了就是成就感，除了健康也是堅毅個性的養成。</p>
 					<div class="row">
 						<div class="col-sm-4">
 							<img src="images/sport/hiking.jpg" class="img-responsive" width="378" height="280">
@@ -832,6 +555,7 @@
 					</div>
 	            </div>
 	          	<div class="modal-dialog">
+	          		<div id="img_memo"></div>
 	            	<div class="modal-content">
 	             		<img src="" class="img-responsive">
 	            	</div>
@@ -840,7 +564,7 @@
 		</div>
 	</div>
 	<footer>
-		<div class="container">
+		<div class="container text-center">
 			<p>感謝耐心閱讀，如果以上認為我的人格特質與能力符合貴公司的需求，希望與貴公司能有面試機會，謝謝。</p>
 			<p>Design by <span style="color:#F7E612">Wesley Lin</span> 2016</p>
 		</div>
