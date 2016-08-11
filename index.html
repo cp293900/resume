@@ -328,9 +328,9 @@
 		    $("#youtube_video iframe").attr("src", url);
 		}
 		$(document).ready(function(){
-		    $("#youtube_video iframe").removeAttr("src");
+		    $("#youtube_video iframe").attr("src","");
 		    $("#youtube_video").on("hide.bs.modal", function(){
-		        $("#youtube_video iframe").removeAttr("src");
+		        $("#youtube_video iframe").attr("src","");
 		    });
 		});
 		// Image Modal
@@ -803,9 +803,9 @@
 						<div class="rl"></div>
 					</div>
 	            </div>
-	          	<div class="modal-dialog" style="display: inline-block; width: auto;">
+	          	<div class="modal-dialog">
 	            	<div class="modal-content">
-	             		<iframe src="" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	             		<iframe src="" width="100%" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 						<p>From <a href="https://vimeo.com/cp293900">Wesley Lin</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 	            	</div>
 	          	</div>
@@ -817,10 +817,10 @@
 						<div class="rl"></div>
 					</div>
 	            </div>
-	          	<div class="modal-dialog" style="display: inline-block; width: auto;">
+	          	<div class="modal-dialog">
 	            	<div class="modal-content">
-	             		<iframe src="" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-						<p>From <a href="https://www.youtube.com/playlist?list=PLFD4CCB3DB1CBBCF8">Wesley Lin</a> on <a href="https://vimeo.com">Youtube</a>.</p>
+	             		<iframe src="" width="100%" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<p>From <a href="https://www.youtube.com/playlist?list=PLFD4CCB3DB1CBBCF8">Wesley Lin</a> on <a href="https://www.youtube.com">Youtube</a>.</p>
 	            	</div>
 	          	</div>
 	        </div>
@@ -831,7 +831,7 @@
 						<div class="rl"></div>
 					</div>
 	            </div>
-	          	<div class="modal-dialog" style="display: inline-block; width: auto;">
+	          	<div class="modal-dialog">
 	            	<div class="modal-content">
 	             		<img src="" class="img-responsive">
 	            	</div>
