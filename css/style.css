@@ -6,8 +6,9 @@ body{
 }
 #menubar.navbar {
   margin-bottom: 0px;
-	}
-	/*Profile*/
+}
+
+/*Profile*/
 #profile { 
     color: #ffffff;
     background: url("../images/bg.jpg");
@@ -33,6 +34,7 @@ body{
 	width: 30%;
 	font-weight: bold;
 }
+
 /*About me*/
 #aboutMe .pill_container{
 	background-color: #2f2f2f;
@@ -54,19 +56,20 @@ body{
 #aboutMe .nav-pills>li>a {
     border-radius: 4px;
 }
-/*Education*/
-#education .row{
-	margin-left: 60px;
+
+/*Education、Experience*/
+#education .row, #experience .row{
+	margin-left: 5%;
 	border-left: 1px solid #999;
 }
-#education .row:hover .glyphicon{
+#education .row:hover .glyphicon,#experience .row:hover .glyphicon{
 	color: #F7E612;
 	transform: scale(1.2);
 }
-#education .edu_left,#education .edu_right{
+#education .edu_left,#education .edu_right,#experience .exp_left,#experience .exp_right{
 	display:inline-block
 }
-#education .glyphicon{
+#education .glyphicon,#experience .glyphicon{
 	color: #ffffff;
 	background: #3B5998;
 	padding: 10px;
@@ -75,7 +78,7 @@ body{
 	position: relative;
 	left: -20px;
 }
-#education .edu_range:before{
+#education .edu_range:before,#experience .exp_range:before{
 	content: "";
 	width:0px;
     height:0px;
@@ -86,51 +89,24 @@ body{
     margin-top: 10px;
     margin-left: -50px;
 }
-#education .edu_range{
+#education .edu_range,#experience .exp_range{
 	background: #3B5998;
 	padding: 0.6em 1.2em;
 	color: #ffffff;
 }
+#education .edu_left h4,#experience .exp_left h4{
+	padding-left: 40px;
+}
+#education .panel-group,#experience .panel-group{
+	margin-left: 40px;
+	margin-right: 5%;
+}
+
 /*Experience*/
-#experience .row{
-	margin-left: 60px;
-	border-left: 1px solid #999;
-}
-#experience .row:hover .glyphicon{
-	color: #F7E612;
-	transform: scale(1.2);
-}
 #experience a{
 	text-decoration: none;
 }
-#experience .exp_left,#experience .exp_right{
-	display:inline-block
-}
-#experience .glyphicon{
-	color: #ffffff;
-	background: #3B5998;
-	padding: 10px;
-	border-radius: 70%;
-	transition: .3s all;
-	position: relative;
-	left: -20px;
-}
-#experience .exp_range:before{
-	content: "";
-	width:0px;
-    height:0px;
-    border-width: 10px 20px 10px 10px;
-    border-style:solid;
-    border-color:transparent #3B5998 transparent transparent;
-    position: absolute;
-    margin-top: 10px;
-    margin-left: -50px;
-}
-#experience .exp_range{
-	background: #3B5998;
-	padding: 0.6em 1.2em;
-	color: #ffffff;
-}
+
 /*My Projects*/
 #myProjects .carousel-indicators li {
     width: 18px;
@@ -163,6 +139,7 @@ body{
 	width: 80%; /* use this, or not */
 	margin: auto;
 }
+
 /*Hobbies*/
 #hobbies .pill_container{
 	background-color: #2f2f2f;
@@ -201,13 +178,10 @@ body{
 	opacity: 0.7;
 	cursor: pointer;
 }
+
 #aboutMe,#education,#experience,#myProjects,#hobbies{
 	padding-top: 20px;
 	padding-bottom: 20px;
-}
-#education .panel-group,#experience .panel-group{
-	margin-left: 40px;
-	margin-right: 100px;
 }
 #vimeo_video .close,#youtube_video .close,#modal_images .close{
 	position: absolute;
@@ -259,7 +233,7 @@ footer{
 .title:after,.title:before{
 	content: "";
 	border: 4px double #c2c2c2;
-	width: 120px;
+	width: 15%;
 	display: inline-block;
 	margin: 9px 10px;
 }
