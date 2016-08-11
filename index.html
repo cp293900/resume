@@ -33,6 +33,7 @@
 		}
 		#profile .banner{ 
 		    background: url("images/dott.png")repeat 0px 0px;
+		    padding:20px 60px;
 		}
 		#profile .detail{
 			border-top: 1px solid #AFAFAF;
@@ -47,12 +48,6 @@
 		#profile .detail_text li:nth-child(1){
 			width: 30%;
 			font-weight: bold;
-		}
-		#fram1{
-			border: 2px solid blue;
-		}
-		#fram2{
-			border: 2px solid red;
 		}
 		/*About me*/
 		#aboutMe .pill_container{
@@ -200,12 +195,22 @@
 		#hobbies .nav-pills>li>a {
 		    border-radius: 4px;
 		}
+		#hobbies .thumbnail {
+		    text-align: center;
+		}
 		#hobbies .thumbnail p {
 		    margin-top: 15px;
+		}
+		#hobbies .thumbnail img{
+		    text-align: center;
 		}	
 		#aboutMe,#education,#experience,#myProjects,#hobbies{
-			padding-top: 10px;
-			padding-bottom: 50px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		#education .panel-group,#experience .panel-group{
+			margin-left: 40px;
+			margin-right: 100px;
 		}
 		#vimeo_video .close,#youtube_video .close,#modal_images .close{
 			position: absolute;
@@ -249,6 +254,17 @@
 			padding-bottom: 50px;
 			background-color:#2f2f2f; 
 			color:#ffffff; 
+		}
+		.title{
+			margin-bottom: 40px;
+			text-align: center;
+		}
+		.title:after,.title:before{
+			content: "";
+			border: 4px double #c2c2c2;
+			width: 120px;
+			display: inline-block;
+			margin: 9px 10px;
 		}
 		/*Affix effect*/
 		.slideanim {visibility:hidden;}
@@ -398,19 +414,17 @@
 	<div class="container-fluid" id="profile">
 		<div class="banner">
 			<div class="row">
-				<div class="col-sm-4" id="fram1">
-					<img src="images/wesley.jpg" class="img-circle img-responsive" width="320" height="320" style="border:5px solid; border-color: #f1f1f1;">
+				<div class="col-sm-3 text-center">
+					<img src="images/wesley.jpg" class="img-circle" style="width:100%; border:5px solid; border-color: #f1f1f1;">
 				</div>
-				<div class="col-sm-8" id="fram2">
+				<div class="col-sm-9" style="padding:20px 30px;">
 					<h1>Wesley Lin</h1>
 					<div class="detail">
 						<ul class="detail_text">
 		                    <li>E-MAIL:</li>
 		                    <li>cp293900@gmail.com</li>
 		                </ul>
-		                <ul class="detail_text">
-		                    <li>Programming Language:</li>
-		                </ul>
+		                <b>Programming Language:</b>
 		                <ul class="detail_text">
 		                    <li>Proficient</li>
 		                    <li>.net(C#)、JAVA、SQL(Oracle)</li>
@@ -428,288 +442,290 @@
 			</div>
 		</div>
 	</div>
-	<!-- About me -->
-	<div class="container-fluid" id="aboutMe">
-		<h1 class="text-center">背景</h1>
-		<div class="pill_container">
-			<ul class="nav nav-pills">
-				<li class="active">
-					<a data-toggle="pill" href="#background">成長背景</a>
-				</li>
-				<li>
-					<a data-toggle="pill" href="#learning">自我學習</a>
-				</li>
-			</ul>
-		</div>
-		<div class="tab-content">
-			<div class="tab-pane fade in active" id="background">
-				<p>
-				您好，我是林政元，來自宜蘭縣五結鄉，畢業於逢甲大學資訊工程學系，家中共有四位成員，父母親、妹妹與我。父親於杏輝藥廠擔任警衛工作；母親在五結經營服飾店並兼顧家管；妹妹於雄獅旅遊擔任業務工作。
-				</p>
-				<p>
-				從小我隨父母親到處擺地攤賣衣服賺錢，父母親曾對我說過不管生活多麼辛苦，一定會讓我們完成大學教育，並期待我們這一代的孩子不再那麼辛苦。因此當我懂事時就希望能多賺些錢讓家人享福，雖然很傳統，但也影響我之後對生活勤奮與負責任的態度。在家中父親凡事創新、一定自己親手做事的態度，讓我從小就對科學與藝術特別感興趣；而母親不辭辛苦、無微不至的照顧，也讓我學習到做事要細心與凡事要多替別人著想。
-				</p>
+	<div>
+		<!-- About me -->
+		<div class="container" id="aboutMe">
+			<h1 class="title">背景</h1>
+			<div class="pill_container">
+				<ul class="nav nav-pills">
+					<li class="active">
+						<a data-toggle="pill" href="#background">成長背景</a>
+					</li>
+					<li>
+						<a data-toggle="pill" href="#learning">自我學習</a>
+					</li>
+				</ul>
 			</div>
-			<div class="tab-pane fade" id="learning">
-				<p>
-				在求學期間，不論是學業或是任何作品雖然都有不錯的成績，但這也讓我反省出一昧地模仿即便是有稍作修改也會讓自己缺乏創意與創新能力，所以從此在任何事情都希望能想出與眾不同的見解來刺激自己的思維，不管在生活上、在課業上、在社團裡，都不希望自己個性被受限，也為了把自己塑造得更有彈性，謙虛聆聽他人的意見是必需的，爾後遭遇到各種的衝突下也改變自己的思考模式，並藉由失敗的經驗來改進自己，未來可以在社會上更能夠應對自如。
-				</p>
-				<p>
-				出社會後，為了豐富自己，除了一些線上的學習以外，也參加各種演講，但經濟的關係都是參加免費活動，不過我認為參加演講除了可以接收到講者的心路歷程外也可以很直接的接收到講者的生活態度，補足生活周遭的空乏。
-				</p>
-				<p>
-				第一份工作結束後，剛好有機會到澳洲Working Holiday，體驗為何大家都趨之若鶩的要到澳洲打工，不過跟我原來的認知不一樣，我所認識到大部分的背包客，努力賺錢的原因是為了享受下一次旅遊能更深刻的享受地景地貌，而不是真正的想存錢，這可能跟當地人的生活型態有關，因為對於當地人來說，生活才是人生的目的，不追求受物質上的享受。在澳洲期間，我在一家義大利人開的工廠上班，他們的工作態度令我震撼，不只追求速度更追求品質，精實的程度讓我一天下來猶如跑了半馬又做了400下伏地挺身，卻還要挨一身罵，但自虐的精神讓我撐過了這一年，在這工廠的工作態度是在澳洲這一年最大的收穫。
-				</p>
-			</div>
-		</div>
-	</div>
-	<!-- Education -->
-	<div class="container-fluid" id="education">
-		<h1 class="text-center">學歷</h1>
-		<div class="row slideanim">
-			<div class="edu_right">
-				<h4>
-					<span class="glyphicon glyphicon-education"></span>
-					<span class="edu_range">2006-2010</span>
-				</h4>
-			</div>
-			<div class="edu_left">
-				<h4> 逢甲大學 資訊工程</h4>
-			</div>
-			<div class="panel-group">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						逢甲大學電視台
-					</div>
+			<div class="tab-content">
+				<div class="tab-pane fade in active" id="background">
+					<p>
+					您好，我是林政元，來自宜蘭縣五結鄉，畢業於逢甲大學資訊工程學系，家中共有四位成員，父母親、妹妹與我。父親於杏輝藥廠擔任警衛工作；母親在五結經營服飾店並兼顧家管；妹妹於雄獅旅遊擔任業務工作。
+					</p>
+					<p>
+					從小我隨父母親到處擺地攤賣衣服賺錢，父母親曾對我說過不管生活多麼辛苦，一定會讓我們完成大學教育，並期待我們這一代的孩子不再那麼辛苦。因此當我懂事時就希望能多賺些錢讓家人享福，雖然很傳統，但也影響我之後對生活勤奮與負責任的態度。在家中父親凡事創新、一定自己親手做事的態度，讓我從小就對科學與藝術特別感興趣；而母親不辭辛苦、無微不至的照顧，也讓我學習到做事要細心與凡事要多替別人著想。
+					</p>
 				</div>
-				<div class="panel panel-default">
-					<div class="panel-body">
-						逢甲大學足球隊
-					</div>
+				<div class="tab-pane fade" id="learning">
+					<p>
+					在求學期間，不論是學業或是任何作品雖然都有不錯的成績，但這也讓我反省出一昧地模仿即便是有稍作修改也會讓自己缺乏創意與創新能力，所以從此在任何事情都希望能想出與眾不同的見解來刺激自己的思維，不管在生活上、在課業上、在社團裡，都不希望自己個性被受限，也為了把自己塑造得更有彈性，謙虛聆聽他人的意見是必需的，爾後遭遇到各種的衝突下也改變自己的思考模式，並藉由失敗的經驗來改進自己，未來可以在社會上更能夠應對自如。
+					</p>
+					<p>
+					出社會後，為了豐富自己，除了一些線上的學習以外，也參加各種演講，但經濟的關係都是參加免費活動，不過我認為參加演講除了可以接收到講者的心路歷程外也可以很直接的接收到講者的生活態度，補足生活周遭的空乏。
+					</p>
+					<p>
+					第一份工作結束後，剛好有機會到澳洲Working Holiday，體驗為何大家都趨之若鶩的要到澳洲打工，不過跟我原來的認知不一樣，我所認識到大部分的背包客，努力賺錢的原因是為了享受下一次旅遊能更深刻的享受地景地貌，而不是真正的想存錢，這可能跟當地人的生活型態有關，因為對於當地人來說，生活才是人生的目的，不追求受物質上的享受。在澳洲期間，我在一家義大利人開的工廠上班，他們的工作態度令我震撼，不只追求速度更追求品質，精實的程度讓我一天下來猶如跑了半馬又做了400下伏地挺身，卻還要挨一身罵，但自虐的精神讓我撐過了這一年，在這工廠的工作態度是在澳洲這一年最大的收穫。
+					</p>
 				</div>
 			</div>
 		</div>
-		<div class="row slideanim">
-			<div class="edu_right">
-				<h4>
-					<span class="glyphicon glyphicon-education"></span>
-					<span class="edu_range">2003-2006</span>
-				</h4>
-			</div>
-			<div class="edu_left">
-				<h4> 宜蘭高中 普通科</h4>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-body">宜蘭高中足球社</div>
-			</div>
-		</div>
-	</div>
-	<!-- Experience -->
-	<div class="container-fluid" id="experience">
-		<h1 class="text-center">經歷</h1>
-		<div class="row slideanim">
-			<div class="exp_right">
-				<h4>
-					<span class="glyphicon glyphicon-briefcase"></span>
-					<span class="exp_range">2011/09-2015/04</span>
-				</h4>
-			</div>
-			<div class="exp_left">
-				<h4> 寶雅國際股份有限公司 工程師</h4>
-			</div>
-			<div class="panel-group" id="exp_root_1">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<a data-toggle="collapse" data-parent="#exp_root_1" href="#exp_1_1">
-							總務、工務、資訊三合一部門採購系統
-						</a>
-					</div>
-					<div class="panel-collapse collapse" id="exp_1_1">
+		<!-- Education -->
+		<div class="container" id="education">
+			<h1 class="title">學歷</h1>
+			<div class="row slideanim">
+				<div class="edu_right">
+					<h4>
+						<span class="glyphicon glyphicon-education"></span>
+						<span class="edu_range">2006-2010</span>
+					</h4>
+				</div>
+				<div class="edu_left">
+					<h4> 逢甲大學 資訊工程</h4>
+				</div>
+				<div class="panel-group">
+					<div class="panel panel-default">
 						<div class="panel-body">
-							出社會後第一份工作在零售業寶雅擔任工程師，選擇零售業是希望可以接觸到不同領域，原本剛進入的計畫是使用Oracle Jdeveloper開發新的ERP系統，但不久後計畫被腰斬，轉而使用公司所採購的訊光EEP2010使用Microsoft Visual Studio C#開發總務、工務、資訊三合一部門採購系統，進而開始學習C#之路，由於學習過Java的原因，學習C#沒有花太多的時間，困難的在於三部門需求的整合，由於一開始沒有意識到溝通的重要性導致第一次重做，第二次重做是沒意識到使用者不太了解自己的需求，最後一次在足夠的溝通下、也到分店現場觀察、再參考政府所使用的標案軟體，才設計出符合各種需求的系統。
+							逢甲大學電視台
 						</div>
 					</div>
-				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<a data-toggle="collapse" data-parent="#exp_root_1" href="#exp_1_2">
-							導入IBM Notes置換舊版EIP
-						</a>
-					</div>
-					<div class="panel-collapse collapse" id="exp_1_2">
+					<div class="panel panel-default">
 						<div class="panel-body">
-							除了上述的系統，在職期間由於公司的EIP系統因公司成長不再符合使用，所以政策希望導入IBM Notes來解決此問題，因此成為此專案負責人對廠商的窗口，除了重新製作平常所使用的資訊頁面外，也要解決因員工成長導致人事作業上的壓力，所以把請假、加班、排班、未打卡、差旅分出來製作成員工可自行操作的頁面，除了與相關部門溝通釐清所有的作業流程外，還需要著手研究由Powerbuilder所寫的人事系統原始碼，重寫成procedure建立在Oracle資料庫裡，讓廠商只需照我寫的文件去按流程呼叫不需要花時間再寫一個新的人事系統與適應公司的資料庫，節省上線時間。
-						</div>
-					</div>
-				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<a data-toggle="collapse" data-parent="#exp_root_1" href="#exp_1_3">
-							管理維護設備
-						</a>
-					</div>
-					<div class="panel-collapse collapse" id="exp_1_3">
-						<div class="panel-body">
-							在寶雅除了這兩大專案外，還有一些零星的瑣事，如賣場商品資料的資料庫更新、推行APP時會員資料的接口、更甚是維護電腦、無線網路、共用硬碟、投影機等等，雖然會拖延一些自己的時間，但對我來說每一樣遇到的事情都是學習機會值得去把握並創造未來契機，回想起剛進去時股價還是30塊的公司，離開再回首時已經是高不可攀的境界。
+							逢甲大學足球隊
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="row slideanim">
-			<div class="exp_right">
-				<h4>
-					<span class="glyphicon glyphicon-briefcase"></span>
-					<span class="exp_range">2010/02-2010/05</span>
-				</h4>
-			</div>
-			<div class="exp_left">
-				<h4> 大學專題</h4>
-			</div>
-			<div class="panel-group" id="exp_root_2">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<a data-toggle="collapse" data-parent="#exp_root_2" href="#exp_2_1">
-							Crossow sensor應用
-						</a>
+			<div class="row slideanim">
+				<div class="edu_right">
+					<h4>
+						<span class="glyphicon glyphicon-education"></span>
+						<span class="edu_range">2003-2006</span>
+					</h4>
+				</div>
+				<div class="edu_left">
+					<h4> 宜蘭高中 普通科</h4>
+				</div>
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-body">宜蘭高中足球社</div>
 					</div>
-					<div class="panel-collapse collapse" id="exp_2_1">
-						<div class="panel-body">
-							大學畢業專題為crossbow所開發的sensor實做應用，在當時智慧手機尚未普的年代正流行的是RFID，但沒想到現今反而是sensor較為廣泛運用，不過當時對於未來的趨勢尚未明朗，我們不敢貿然下時間學習crossbow所開發語言nesC去控制sensor，所以我們決定利用Java來驅動sensor來實作這次的專題，把方向著重於Java學習、Java與硬體的結合，最後克服在沒有開放介接原始碼的情況下，寫usb接收程式去接收sensor傳來的資料，再配合原始資料做對照、過濾、解碼，最後結合視窗、資料庫與網頁成為我們的第一個軟體。
+				</div>
+			</div>
+		</div>
+		<!-- Experience -->
+		<div class="container" id="experience">
+			<h1 class="title">經歷</h1>
+			<div class="row slideanim">
+				<div class="exp_right">
+					<h4>
+						<span class="glyphicon glyphicon-briefcase"></span>
+						<span class="exp_range">2011/09-2015/04</span>
+					</h4>
+				</div>
+				<div class="exp_left">
+					<h4> 寶雅國際股份有限公司 工程師</h4>
+				</div>
+				<div class="panel-group" id="exp_root_1">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a data-toggle="collapse" data-parent="#exp_root_1" href="#exp_1_1">
+								總務、工務、資訊三合一部門採購系統
+							</a>
+						</div>
+						<div class="panel-collapse collapse" id="exp_1_1">
+							<div class="panel-body">
+								出社會後第一份工作在零售業寶雅擔任工程師，選擇零售業是希望可以接觸到不同領域，原本剛進入的計畫是使用Oracle Jdeveloper開發新的ERP系統，但不久後計畫被腰斬，轉而使用公司所採購的訊光EEP2010使用Microsoft Visual Studio C#開發總務、工務、資訊三合一部門採購系統，進而開始學習C#之路，由於學習過Java的原因，學習C#沒有花太多的時間，困難的在於三部門需求的整合，由於一開始沒有意識到溝通的重要性導致第一次重做，第二次重做是沒意識到使用者不太了解自己的需求，最後一次在足夠的溝通下、也到分店現場觀察、再參考政府所使用的標案軟體，才設計出符合各種需求的系統。
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a data-toggle="collapse" data-parent="#exp_root_1" href="#exp_1_2">
+								導入IBM Notes置換舊版EIP
+							</a>
+						</div>
+						<div class="panel-collapse collapse" id="exp_1_2">
+							<div class="panel-body">
+								除了上述的系統，在職期間由於公司的EIP系統因公司成長不再符合使用，所以政策希望導入IBM Notes來解決此問題，因此成為此專案負責人對廠商的窗口，除了重新製作平常所使用的資訊頁面外，也要解決因員工成長導致人事作業上的壓力，所以把請假、加班、排班、未打卡、差旅分出來製作成員工可自行操作的頁面，除了與相關部門溝通釐清所有的作業流程外，還需要著手研究由Powerbuilder所寫的人事系統原始碼，重寫成procedure建立在Oracle資料庫裡，讓廠商只需照我寫的文件去按流程呼叫不需要花時間再寫一個新的人事系統與適應公司的資料庫，節省上線時間。
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a data-toggle="collapse" data-parent="#exp_root_1" href="#exp_1_3">
+								管理維護設備
+							</a>
+						</div>
+						<div class="panel-collapse collapse" id="exp_1_3">
+							<div class="panel-body">
+								在寶雅除了這兩大專案外，還有一些零星的瑣事，如賣場商品資料的資料庫更新、推行APP時會員資料的接口、更甚是維護電腦、無線網路、共用硬碟、投影機等等，雖然會拖延一些自己的時間，但對我來說每一樣遇到的事情都是學習機會值得去把握並創造未來契機，回想起剛進去時股價還是30塊的公司，離開再回首時已經是高不可攀的境界。
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="row slideanim">
-			<div class="exp_right">
-				<h4>
-					<span class="glyphicon glyphicon-briefcase"></span>
-					<span class="exp_range">2008/06-2009/07</span>	
-				</h4>
-			</div>
-			<div class="exp_left">
-				<h4> 今網網路公司 裝機工程師</h4>
-			</div>
-			<div class="panel-group" id="exp_root_3">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<a data-toggle="collapse" data-parent="#exp_root_3" href="#exp_3_1">
-							大樓網路建置、客戶安裝網路
-						</a>
-					</div>
-					<div class="panel-collapse collapse" id="exp_3_1">
-						<div class="panel-body">
-							在求學期間應徵Kingnet網路公司的裝機工程師，很幸運難得能學習到大樓整體網路的建置方法、到客戶家中佈線安裝網路，雖然系上主學程為網際網路但這些經驗是無法在學校能夠學習到，除此之外也讓我更有經驗在人際關係上，與客戶的應對進退學習到很多。
+			<div class="row slideanim">
+				<div class="exp_right">
+					<h4>
+						<span class="glyphicon glyphicon-briefcase"></span>
+						<span class="exp_range">2010/02-2010/05</span>
+					</h4>
+				</div>
+				<div class="exp_left">
+					<h4> 大學專題</h4>
+				</div>
+				<div class="panel-group" id="exp_root_2">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a data-toggle="collapse" data-parent="#exp_root_2" href="#exp_2_1">
+								Crossow sensor應用
+							</a>
+						</div>
+						<div class="panel-collapse collapse" id="exp_2_1">
+							<div class="panel-body">
+								大學畢業專題為crossbow所開發的sensor實做應用，在當時智慧手機尚未普的年代正流行的是RFID，但沒想到現今反而是sensor較為廣泛運用，不過當時對於未來的趨勢尚未明朗，我們不敢貿然下時間學習crossbow所開發語言nesC去控制sensor，所以我們決定利用Java來驅動sensor來實作這次的專題，把方向著重於Java學習、Java與硬體的結合，最後克服在沒有開放介接原始碼的情況下，寫usb接收程式去接收sensor傳來的資料，再配合原始資料做對照、過濾、解碼，最後結合視窗、資料庫與網頁成為我們的第一個軟體。
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="row slideanim">
-			<div class="exp_right">
-				<h4>
-					<span class="glyphicon glyphicon-briefcase"></span>
-					<span class="exp_range">2006/10-2010/05</span>
-				</h4>
-			</div>
-			<div class="exp_left">
-				<h4> 逢甲大學數位教材中心 教材製作工讀生</h4>
-			</div>
-		</div>
-		<div class="row">
-			<div class="exp_right">
-				<h4>
-					<span class="glyphicon glyphicon-briefcase"></span>
-					<span class="exp_range">2006/07-2006/08</span>
-				</h4>
-			</div>
-			<div class="exp_left">
-				<h4> 宜蘭國際童玩節 工讀生</h4>
-			</div>
-		</div>
-	</div>
-	<!-- My project -->
-	<div class="container-fluid" id="myProjects">
-		<h1 class="text-center">作品</h1>
-		<div class="carousel slide" id="myCarousel">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-				<li data-target="#myCarousel" data-slide-to="3"></li>
-			</ol>
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner slideanim" role="listbox">
-				<div class="item active">
-					<a href="https://cp293900.github.io/PMS/index.html" target="_blank"><img src="images/projects/pms.jpg" width="1057" height="648"></a>
-					<div class="carousel-caption">
-						<h3><span>&nbsp;PMS採購系統&nbsp;</span></h3>
-						<h4><span>&nbsp;總務、工務、資訊三合一部門採購系統&nbsp;</span></h4>
-						<p><a class="btn btn-large btn-danger" href="https://cp293900.github.io/PMS/index.html" target="_blank">詳細說明</a></p>
-					</div>
+			<div class="row slideanim">
+				<div class="exp_right">
+					<h4>
+						<span class="glyphicon glyphicon-briefcase"></span>
+						<span class="exp_range">2008/06-2009/07</span>	
+					</h4>
 				</div>
-				<div class="item">
-					<img src="images/projects/ibmnotes.jpg" width="1057" height="648">
-					<div class="carousel-caption">
-						<h3><span>&nbsp;Poya IBM Notes EIP&nbsp;</span></h3>
-						<h4><span>&nbsp;導入IBM Notes置換舊版EIP&nbsp;</span></h4>
-						<p><a class="btn btn-large btn-danger" href="http://www.slideshare.net/cp293900/poya-ibm-notes">詳細說明</a></p>
-					</div>
+				<div class="exp_left">
+					<h4> 今網網路公司 裝機工程師</h4>
 				</div>
-				<div class="item">
-					<img src="images/projects/darenmobile.jpg" width="1057" height="648">
-					<div class="carousel-caption">
-						<h3><span>&nbsp;DarenMobile&nbsp;</span></h3>
-						<h4><span>&nbsp;網頁專題&nbsp;</span></h4>
-						<p><a class="btn btn-large btn-danger" href="http://www.slideshare.net/cp293900/daren-mobile-64857863">詳細說明</a></p>
-					</div>
-				</div>
-				<div class="item">
-					<img src="images/projects/crossbow.jpg" width="1057" height="648">
-					<div class="carousel-caption">
-						<h3><span>&nbsp;居家看護系統&nbsp;</span></h3>
-						<h4><span>&nbsp;Crossow sensor應用&nbsp;</span></h4>
-						<p><a class="btn btn-large btn-danger" href="http://www.slideshare.net/cp293900/crossbow-sensor-project">詳細說明</a></p>
+				<div class="panel-group" id="exp_root_3">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a data-toggle="collapse" data-parent="#exp_root_3" href="#exp_3_1">
+								大樓網路建置、客戶安裝網路
+							</a>
+						</div>
+						<div class="panel-collapse collapse" id="exp_3_1">
+							<div class="panel-body">
+								在求學期間應徵Kingnet網路公司的裝機工程師，很幸運難得能學習到大樓整體網路的建置方法、到客戶家中佈線安裝網路，雖然系上主學程為網際網路但這些經驗是無法在學校能夠學習到，除此之外也讓我更有經驗在人際關係上，與客戶的應對進退學習到很多。
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<!-- Left and right controls -->
-		    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-		      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		      <span class="sr-only">Previous</span>
-		    </a>
-		    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-		      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		      <span class="sr-only">Next</span>
-		    </a>
+			<div class="row slideanim">
+				<div class="exp_right">
+					<h4>
+						<span class="glyphicon glyphicon-briefcase"></span>
+						<span class="exp_range">2006/10-2010/05</span>
+					</h4>
+				</div>
+				<div class="exp_left">
+					<h4> 逢甲大學數位教材中心 教材製作工讀生</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="exp_right">
+					<h4>
+						<span class="glyphicon glyphicon-briefcase"></span>
+						<span class="exp_range">2006/07-2006/08</span>
+					</h4>
+				</div>
+				<div class="exp_left">
+					<h4> 宜蘭國際童玩節 工讀生</h4>
+				</div>
+			</div>
 		</div>
-	</div>
-	<!-- Hobbies -->
-	<div class="container-fluid" id="hobbies">
-		<h1 class="text-center">興趣</h1>
-		<div class="pill_container">
-			<ul class="nav nav-pills">
-				<li class="active">
-					<a data-toggle="pill" href="#video">VIDEO</a>
-				</li>
-				<li>
-					<a data-toggle="pill" href="#photoshop">PHOTOSHOP</a>
-				</li>
-				<li>
-					<a data-toggle="pill" href="#sport">SPORT</a>
-				</li>
-			</ul>
+		<!-- My project -->
+		<div id="myProjects">
+			<h1 class="title">作品</h1>
+			<div class="carousel slide" id="myCarousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner slideanim" role="listbox">
+					<div class="item active">
+						<a href="https://cp293900.github.io/PMS/index.html" target="_blank"><img src="images/projects/pms.jpg" width="1057" height="648"></a>
+						<div class="carousel-caption">
+							<h3><span>&nbsp;PMS採購系統&nbsp;</span></h3>
+							<h4><span>&nbsp;總務、工務、資訊三合一部門採購系統&nbsp;</span></h4>
+							<p><a class="btn btn-large btn-danger" href="https://cp293900.github.io/PMS/index.html" target="_blank">詳細說明</a></p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="images/projects/ibmnotes.jpg" width="1057" height="648">
+						<div class="carousel-caption">
+							<h3><span>&nbsp;Poya IBM Notes EIP&nbsp;</span></h3>
+							<h4><span>&nbsp;導入IBM Notes置換舊版EIP&nbsp;</span></h4>
+							<p><a class="btn btn-large btn-danger" href="http://www.slideshare.net/cp293900/poya-ibm-notes">詳細說明</a></p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="images/projects/darenmobile.jpg" width="1057" height="648">
+						<div class="carousel-caption">
+							<h3><span>&nbsp;DarenMobile&nbsp;</span></h3>
+							<h4><span>&nbsp;網頁專題&nbsp;</span></h4>
+							<p><a class="btn btn-large btn-danger" href="http://www.slideshare.net/cp293900/daren-mobile-64857863">詳細說明</a></p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="images/projects/crossbow.jpg" width="1057" height="648">
+						<div class="carousel-caption">
+							<h3><span>&nbsp;居家看護系統&nbsp;</span></h3>
+							<h4><span>&nbsp;Crossow sensor應用&nbsp;</span></h4>
+							<p><a class="btn btn-large btn-danger" href="http://www.slideshare.net/cp293900/crossbow-sensor-project">詳細說明</a></p>
+						</div>
+					</div>
+				</div>
+				<!-- Left and right controls -->
+			    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			      <span class="sr-only">Previous</span>
+			    </a>
+			    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			      <span class="sr-only">Next</span>
+			    </a>
+			</div>
 		</div>
-		<div class="tab-content">
-			<div class="tab-pane fade in active" id="video">
-				<p>在大學期間，我加入逢甲大學電視台志工社團，除了能了解業界新聞製作並製作校園新聞外，在任務方面能接觸許多學校大型表演、活動，在值班時間外也能製作屬於自己的作品，導演、編劇、攝影、剪輯、演員樣樣都可以接觸，作品也投稿比賽獲得了肯定，每一次累積的經驗在未來都有機會轉換成創意，深刻體會到創意是基礎的精進。</p>
-				<div class="row text-center">
+		<!-- Hobbies -->
+		<div class="container" id="hobbies">
+			<h1 class="title">興趣</h1>
+			<div class="pill_container">
+				<ul class="nav nav-pills">
+					<li class="active">
+						<a data-toggle="pill" href="#video">VIDEO</a>
+					</li>
+					<li>
+						<a data-toggle="pill" href="#photoshop">PHOTOSHOP</a>
+					</li>
+					<li>
+						<a data-toggle="pill" href="#sport">SPORT</a>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane fade in active" id="video">
+					<p>在大學期間，我加入逢甲大學電視台志工社團，除了能了解業界新聞製作並製作校園新聞外，在任務方面能接觸許多學校大型表演、活動，在值班時間外也能製作屬於自己的作品，導演、編劇、攝影、剪輯、演員樣樣都可以接觸，作品也投稿比賽獲得了肯定，每一次累積的經驗在未來都有機會轉換成創意，深刻體會到創意是基礎的精進。</p>
 					<div class="row">
 						<div class="col-sm-3">
 							<div class="thumbnail">
-								<img src="images/video/dream.jpg" class="img-responsive" width="378" height="280">
+								<img src="images/video/dream.jpg">
 								<p>微電影</p>
 								<p><strong>夢想無盡頭</strong></p>
 								<button class="btn btn-danger" data-toggle="modal" data-target="#youtube_video" id="btn_dream" onclick="setModalYoutubeURL(this)">播放</button>
@@ -717,7 +733,15 @@
 						</div>
 						<div class="col-sm-3">
 							<div class="thumbnail">
-								<img src="images/video/belong.jpg" class="img-responsive" width="378" height="280">
+								<img src="images/video/recruitment.jpg">
+								<p>宣傳片</p>
+								<p><strong>招生說明</strong></p>
+								<button class="btn btn-danger" data-toggle="modal" data-target="#youtube_video" id="btn_recruitment" onclick="setModalVimeoURL(this)">播放</button>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumbnail">
+								<img src="images/video/belong.jpg">
 								<p>MV</p>
 								<p><strong>屬於</strong></p>
 								<button class="btn btn-danger" data-toggle="modal" data-target="#youtube_video" id="btn_belong" onclick="setModalYoutubeURL(this)">播放</button>
@@ -725,7 +749,7 @@
 						</div>
 						<div class="col-sm-3">
 							<div class="thumbnail">
-								<img src="images/video/international.jpg" class="img-responsive" width="378" height="280">
+								<img src="images/video/international.jpg">
 								<p>廣告</p>
 								<p><strong>國際交換志工</strong></p>
 								<button class="btn btn-danger" data-toggle="modal" data-target="#youtube_video" id="btn_international" onclick="setModalYoutubeURL(this)">播放</button>
@@ -735,15 +759,7 @@
 					<div class="row">
 						<div class="col-sm-3">
 							<div class="thumbnail">
-								<img src="images/video/recruitment.jpg" class="img-responsive" width="378" height="280">
-								<p>宣傳片</p>
-								<p><strong>招生說明</strong></p>
-								<button class="btn btn-danger" data-toggle="modal" data-target="#youtube_video" id="btn_recruitment" onclick="setModalVimeoURL(this)">播放</button>
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<div class="thumbnail">
-								<img src="images/video/wedding.jpg" class="img-responsive" width="378" height="280">
+								<img src="images/video/wedding.jpg">
 								<p>紀錄片</p>
 								<p><strong>婚禮紀錄</strong></p>
 								<button class="btn btn-danger" data-toggle="modal" data-target="#vimeo_video" id="btn_wedding" onclick="setModalVimeoURL(this)">播放</button>
@@ -751,26 +767,22 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="tab-pane fade" id="photoshop">
-				<p>我喜歡畫圖、設計平面作品，除了設計海報、佈告欄，也設計畢業紀念冊，這也是奠定現在做任何設計時的想法基礎。</p>
-				<div class="row text-center">
+				<div class="tab-pane fade" id="photoshop">
+					<p>我喜歡畫圖、設計平面作品，除了設計海報、佈告欄，也設計畢業紀念冊，這也是奠定現在做任何設計時的想法基礎。</p>
 					<div class="row">
 						<div class="col-sm-4">
-							<img src="images/photoshop/graduate_1.jpg" class="img-responsive"  data-toggle="modal" data-target="#modal_images" id="img_graduate" onclick="setModalImagesURL(this)" width="378" height="280">
+							<img src="images/photoshop/graduate_1.jpg" class="img-responsive"  data-toggle="modal" data-target="#modal_images" id="img_graduate" onclick="setModalImagesURL(this)">
 						</div>
 						<div class="col-sm-4">
-							<img src="images/photoshop/brochure.jpg" class="img-responsive"  data-toggle="modal" data-target="#modal_images" id="img_brochure" onclick="setModalImagesURL(this)" width="378" height="280">
+							<img src="images/photoshop/brochure.jpg" class="img-responsive"  data-toggle="modal" data-target="#modal_images" id="img_brochure" onclick="setModalImagesURL(this)">
 						</div>
 						<div class="col-sm-4">
-							<img src="images/photoshop/index.jpg" class="img-responsive"  data-toggle="modal" data-target="#modal_images" id="img_index" onclick="setModalImagesURL(this)" width="378" height="280">
+							<img src="images/photoshop/index.jpg" class="img-responsive"  data-toggle="modal" data-target="#modal_images" id="img_index" onclick="setModalImagesURL(this)">
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="tab-pane fade" id="sport">
-				<p>至於運動方面，我喜歡的是足球，在高中加入社團、在大學加入校隊，但出社會後礙於沒有場地的關係轉換成慢跑、爬山、戶外健身，在運動的過程中可以感受到痛苦驅使自己放棄，但唯有堅持下去才能養成堅毅的性格，相信喜歡運動的都能感受到這種自虐的精神。</p>
-				<div class="row text-center">
+				<div class="tab-pane fade" id="sport">
+					<p>至於運動方面，我喜歡的是足球，在高中加入社團、在大學加入校隊，但出社會後礙於沒有場地的關係轉換成慢跑、爬山、戶外健身，在運動的過程中可以感受到痛苦驅使自己放棄，但唯有堅持下去才能養成堅毅的性格，相信喜歡運動的都能感受到這種自虐的精神。</p>
 					<div class="row">
 						<div class="col-sm-4">
 							<img src="images/sport/hiking.jpg" class="img-responsive" width="378" height="280">
@@ -784,54 +796,56 @@
 					</div>
 				</div>
 			</div>
+			<!-- Modal Vimeo-->
+			<div class="modal fade text-center" id="vimeo_video" role="dialog">
+				<div class="close" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+	            </div>
+	          	<div class="modal-dialog" style="display: inline-block; width: auto;">
+	            	<div class="modal-content">
+	             		<iframe src="" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<p>From <a href="https://vimeo.com/cp293900">Wesley Lin</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+	            	</div>
+	          	</div>
+	        </div>
+	        <!-- Modal Youtube-->
+			<div class="modal fade text-center" id="youtube_video" role="dialog">
+				<div class="close" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+	            </div>
+	          	<div class="modal-dialog" style="display: inline-block; width: auto;">
+	            	<div class="modal-content">
+	             		<iframe src="" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<p>From <a href="https://www.youtube.com/playlist?list=PLFD4CCB3DB1CBBCF8">Wesley Lin</a> on <a href="https://vimeo.com">Youtube</a>.</p>
+	            	</div>
+	          	</div>
+	        </div>
+	        <!-- Modal Images-->
+	        <div class="modal fade text-center" id="modal_images" role="dialog">
+				<div class="close" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+	            </div>
+	          	<div class="modal-dialog" style="display: inline-block; width: auto;">
+	            	<div class="modal-content">
+	             		<img src="" class="img-responsive">
+	            	</div>
+	          	</div>
+	        </div>
 		</div>
-		<!-- Modal Vimeo-->
-		<div class="modal fade text-center" id="vimeo_video" role="dialog">
-			<div class="close" data-dismiss="modal">
-				<div class="lr">
-					<div class="rl"></div>
-				</div>
-            </div>
-          	<div class="modal-dialog" style="display: inline-block; width: auto;">
-            	<div class="modal-content">
-             		<iframe src="" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-					<p>From <a href="https://vimeo.com/cp293900">Wesley Lin</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-            	</div>
-          	</div>
-        </div>
-        <!-- Modal Youtube-->
-		<div class="modal fade text-center" id="youtube_video" role="dialog">
-			<div class="close" data-dismiss="modal">
-				<div class="lr">
-					<div class="rl"></div>
-				</div>
-            </div>
-          	<div class="modal-dialog" style="display: inline-block; width: auto;">
-            	<div class="modal-content">
-             		<iframe src="" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-					<p>From <a href="https://www.youtube.com/playlist?list=PLFD4CCB3DB1CBBCF8">Wesley Lin</a> on <a href="https://vimeo.com">Youtube</a>.</p>
-            	</div>
-          	</div>
-        </div>
-        <!-- Modal Images-->
-        <div class="modal fade text-center" id="modal_images" role="dialog">
-			<div class="close" data-dismiss="modal">
-				<div class="lr">
-					<div class="rl"></div>
-				</div>
-            </div>
-          	<div class="modal-dialog" style="display: inline-block; width: auto;">
-            	<div class="modal-content">
-             		<img src="" class="img-responsive">
-            	</div>
-          	</div>
-        </div>
 	</div>
-	<!-- Go back -->
 	<footer>
-		<p>感謝耐心閱讀，如果以上認為我的人格特質與能力符合貴公司的需求，希望與貴公司能有面試機會，謝謝。</p>
-		<p>Design by <span style="color:#F7E612">Wesley Lin</span> 2016</p>
+		<div class="container">
+			<p>感謝耐心閱讀，如果以上認為我的人格特質與能力符合貴公司的需求，希望與貴公司能有面試機會，謝謝。</p>
+			<p>Design by <span style="color:#F7E612">Wesley Lin</span> 2016</p>
+		</div>
 	</footer>
+	<!-- Go back -->
 	<a href="#resume_page" id="toTop" style="display: none;"></a>
 </body>
 </html>
