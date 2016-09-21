@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>OneFunction</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="jrsys-websocket-kits-1.0.7.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var containerName = guid();
+			$('#containerNameShow').val(containerName);
+			$('#containerName').val(containerName);
+			$('#containerNameForImport').val(containerName);
+			$('#CheckPluginVerBtn').click(function (event) {
+                var result = null;
+                checkPluginVer(result, AllCallBackFunction);
+			});
+			$('#SetLicenseBtn').click(function (event) {
+			    var result = null;
+			    jPKI.prototype.SetLicense("Fuzhou FoxitSign Ltd.", "DB05880EC02006E4B193C706AA67B10027754B4B53B3C9C3B1B6A2261C3BA0CD6F6ABEB00C1350F34DDEF7D5000DF4D4", AllCallBackFunction);
+			});
+
+            //選擇憑證簽章
+            $('#rsaSignedDataWithContentDigestBtn').click(function (event) {
+                var sendData = "3100320033003400350036003700380039003000";
+                var result = null;
+                jPKI.prototype.rsaSignedDataWithContentDigest(sendData, AllCallBackFunction);
+            });
+            
+
+            //匯出憑證成HEX字串
+            $('#rsaexportCertToHexBtn').click(function (event) {
+                jPKI.prototype.exportCertToHex(AllCallBackFunction);
+            });
+            $('#rsaexportCertToHexP11Btn').click(function (event) {
+                var iCert = 2;
+                jPKI.prototype.exportCertToHexP11(iCert, AllCallBackFunction);
+            });
+            
+			//解譯憑證
+            $('#decodeCertificateBtn').click(function (event) {
+                var hexCert = $('#certHex2').val();
+                jPKI.prototype.decodeCertificate(hexCert, AllCallBackFunction);
+
+            });
+			//設定ready後要執行的function
+			jPKI.prototype.readyCallbackFunction = readyHandler;
+        });
+        //ready後要執行的function
+		function readyHandler(){
+            $('#ChatContext').append("web socket is ready<br /><br />");
+        }
+
+        function AllCallBackFunction(returnValue) {
+            var method = jPKI.prototype.jMethod;
+            var showMsg = "";
+            switch (method) {
+                case "SetLicense":
+                    var rv = jPKI.prototype.rv;
+                    if (rv==0) {
+                        returnValue = "Success";
+                    }
+                    showMsg = returnValue + "<br />";
+                    break;
+                case "checkPluginVer":
+                    showMsg = returnValue + "<br />";
+                    break;
+                
+                case "rsaSignedDataWithContentDigest":
+                    var signCert = jPKI.prototype.signerCert;
+                    var signature = jPKI.prototype.signature;
+                    var p7 = returnValue;
+                    var rv = jPKI.prototype.rv;
+                    if (rv == 0) {
+                        showMsg = "SignSuccess<br/>P7:<br/>" + p7 + "<br/>signerCert:<br/>" + signCert;
+                    } else {
+                        var errorMsg = jPKI.prototype.errorMsg;
+                        showMsg = errorMsg + "<br/>";
+                    }
+                    break;
+                
+                case "exportCertToHex":
+                    showMsg = returnValue + "<br />";
+                    break;
+                case "exportCertToHexP11":
+                    showMsg = returnValue + "<br />";
+                    break;
+                
+                case "decodeCertificate":
+					var sn = jPKI.prototype.certSerial;
+					var subject = jPKI.prototype.certSubject;
+					var issuer = jPKI.prototype.certIssuer;
+					var notBefore = jPKI.prototype.certNotBefore_display;
+					var notAfter = jPKI.prototype.certNotAfter_display;
+					var certUnifromOrganizationIDString = jPKI.prototype.certUnifromOrganizationIDString;
+					var certCardHolderRankString = jPKI.prototype.certCardHolderRankString;
+					showMsg = "<table><tr><td width='100'></td><td></td></tr>"
+						+ "<tr><td colspan='2'></td></tr>"
+						+ "<tr><td>憑證序號 </td><td>" + sn + "</td></tr>"
+						+ "<tr><td>憑證主旨 </td><td>" + subject + "</td></tr>"
+						+ "<tr><td>憑證發行者 </td><td>" + issuer + "</td></tr>"
+						+ "<tr><td>憑證啟始日 </td><td>" + notBefore + "</td></tr>"
+						+ "<tr><td>憑證到期日 </td><td>" + notAfter + "</td></tr>"
+                    break;
+            }
+            $('#ChatContext').append(showMsg + "<br />");
+
+        }
+
+		function guid() {
+			function s4() {
+				return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+			}
+			return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+		}
+    </script>
+
+</head>
+<body>
+    <table border="1" style="width:100%;">
+        <tr>
+            <td>取得元件版本</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><input type="button" id="CheckPluginVerBtn" value="run" /></td>
+        </tr>
+        <tr>
+            <td>設定Licence</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><input type="button" id="SetLicenseBtn" value="run" /></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>選擇憑證簽章<br>(rsaSignedDataWithContentDigest)</td>
+            <td>&nbsp;</td>
+            <td><input type="button" id="rsaSignedDataWithContentDigestBtn" value="run" /></td>
+        </tr>
+        <tr>
+            <td>憑證匯出 Hex 字串</td>
+            <td>匯出軟體憑證成 Hex 字串"<br>(rsaexportCertToHex)</td>
+            <td>&nbsp;</td>
+            <td><input type="button" id="rsaexportCertToHexBtn" value="run" /></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>匯出智慧卡憑證成 Hex 字串<br>(rsaexportCertToHexP11)</td>
+            <td>&nbsp;</td>
+            <td><input type="button" id="rsaexportCertToHexP11Btn" value="run" /></td>
+        </tr>
+        <tr>
+            <td>解譯憑證<br>(decodeCertificate)</td>
+            <td>
+                請輸入憑證的hex字串：(可從簽章的結果中取得)<br><textarea rows="4" cols="50" id="certHex2" name="certHex2"></textarea>
+            </td>
+            <td><input type="button" id="decodeCertificateBtn" value="run" /></td>
+        </tr>
+    </table>
+    <table border="1" style="width:100%;">
+        <tr>
+            <td>執行結果：<div id="ChatContext" style="width:100%;word-wrap: break-word;word-break: break-all;"></div></td>
+        </tr>
+    </table>
+</body>
+</html>
+
