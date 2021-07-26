@@ -31,14 +31,15 @@
 		});
 		function setModalYoutubeURL(elmnt){
 			var url = "";
-			if(elmnt.id=="btn_international")
+			if(elmnt.id === "btn_international")
 				url = "https://www.youtube.com/embed/KRQFhngcjvg?autoplay=1";
-			else if(elmnt.id=="btn_belong")
+			else if(elmnt.id === "btn_belong")
 				url = "https://www.youtube.com/embed/2pAhqNJIkVc?autoplay=1";
-			else if(elmnt.id=="btn_dream")
+			else if(elmnt.id === "btn_dream")
 				url = "https://www.youtube.com/embed/eAO1uokim7E?autoplay=1";
-			else if(elmnt.id=="btn_dream")
+			else if(elmnt.id === "btn_recruitment")
 				url = "https://www.youtube.com/embed/SZrGBIkqEZk?autoplay=1";
+
 		    $("#youtube_video iframe").attr("src", url);
 		}
 		$(document).ready(function(){
@@ -156,18 +157,17 @@
 		                    <li>E-mail:</li>
 		                    <li>cp293900@gmail.com</li>
 		                </ul>
-		                <b>Programming Language:</b>
 		                <ul class="detail_text">
-		                    <li>Proficient</li>
-		                    <li>C#、Java、SQL(Oracle)</li>
+		                    <li>Main:</li>
+		                    <li>C#、Java、SQL、HTML、CSS、Javascript</li>
 		                </ul>
 		                <ul class="detail_text">
-		                    <li>Familiar</li>
-		                    <li>Html、Css、Javascript、jQuery、JSP、Spring、Struts2</li>
+		                    <li>Web Framework:</li>
+		                    <li>Spring MVC、Asp.Net</li>
 		                </ul>
 		                <ul class="detail_text">
-		                    <li>Beginner</li>
-		                    <li>Asp.net(MVC)</li>
+		                    <li>Database</li>
+		                    <li>MSSQL、ORACLE</li>
 		                </ul>
 					</div>
 				</div>
@@ -187,24 +187,25 @@
 						<a data-toggle="pill" href="#background">成長背景</a>
 					</li>
 					<li>
-						<a data-toggle="pill" href="#learning">追求學習</a>
+						<a data-toggle="pill" href="#learning">特殊經歷</a>
 					</li>
 				</ul>
 			</div>
 			<div class="tab-content">
 				<div class="tab-pane fade in active" id="introduce">
-					<p>　　你好，我是林政元，目前任職於捷而思股份有限公司程式設計師，主要負責PKI技術相關專案，從工作以來長時間在於Windows desktop軟體設計，次要為網頁程式設計。</p>
-					<p>　　平時工作的個性是如果時程允許的情況下喜歡研究更卓越的方法來解決問題，而在專案上比起個人的單打獨鬥更嚮往多人員的協同工作，在照顧各項細節方面設想周詳，但有時也會成為規劃速度上的缺點，除了加強改進外也希望能有高人指點。</p>
-					<p>　　由於技術日新月異，對於未來專長方向目前仍未準確定向，所以目前大方向先定在網頁程式設計，而小方向希望能專精在網頁前端設計，更甚是包括UI/UX設計，也是因為個性使然，期望做出來的東西能可以受到更多人的批評指教。</p>
+					<p>　　你好，我是林政元，目前任職於捷而思股份有限公司程式設計師，主要負責PKI技術相關專案，實現於桌面軟體與網站應用。</p>
+					<p>　　我認為「認真做好一件事便會成為專家」，在面對工作，資訊蒐集與練習絕不馬虎，不躁進的打穩基礎為成功的基石。</p>
+					<p>　　為了能獨立作業，目前正朝全端工程師目標的路上、學習分散式系統規劃，希望能帶領或跟著團隊完成項目及專案，達成更多的專案項目。</p>
 				</div>
 				<div class="tab-pane fade" id="background">
-					<p>　　畢業於逢甲大學資訊工程學系，宜蘭人，家中共有四位成員，父母親、妹妹與我。父親於藥廠擔任作業員；母親在經營服飾店；妹妹於旅遊業擔任業務工作。</p>
-					<p>　　從小隨父母親闖蕩夜市擺攤賣衣服，父母親曾對我說過不管生活多麼辛苦，一定會讓我們完成大學學業，也期待著下一代的孩子不再那麼辛苦。因此即便我資質駑鈍也盡力培養多樣化的能力，將成果回饋給家人。</p>
-					<p>　　我的父親琴棋書畫都有涉略，耳濡目染之下讓我從小就對科學與藝術特別感興趣；我的母親在生意上八面玲瓏，也讓我學習到如何待人處事要如何應對進退。</p>
+					<p>　　畢業於逢甲大學資訊工程學系，宜蘭人，家中共有四位成員，父母親、妹妹與我。父親任職物業管理；母親經營服飾店；妹妹於旅遊業擔任業務。</p>
+					<p>　　從小隨父母親闖蕩夜市擺攤賣衣服，父母親曾對我說過不管生活多麼辛苦，一定會讓我們完成大學學業，也期待著下一代的孩子不再那麼辛苦。因此即便我資質駑鈍也盡力學習，與家人共享成果。</p>
+					<p>　　父親琴棋書畫都有涉略，耳濡目染之下讓我從小就對科學與藝術特別感興趣；母親在生意上八面玲瓏，也讓我學習到如何待人處事要如何應對進退。</p>
 				</div>
 				<div class="tab-pane fade" id="learning">
-					<p>　　「簡單的事重複做便會成為專家」在現今這句話卻變得沒那麼適用，此刻都難以預料舊技術多久後就被淘汰，而新的技術多久後又被取代，為了尋求謀生的技能，便要時刻的了解各種資訊，但考慮到學習的CP值，平時就蒐集免費線上的學習、參加各種免費演講都對我來說都是不錯的選擇，吸收講者的心路歷程更可以避免走太多的冤枉路。</p>
-					<p>　　在2015年第一份工作結束後，因緣際會下到了澳洲度假打工，找到了一家義大利人開的工廠上班，老闆的工作態度著實影響了我的三觀，不只追求速度也求品質，體會到天下武功唯快不破的精神，除了精實還是精實，撐過一年後我覺得人生不再困難算是在澳洲最大的收穫。</p>
+					<p>　　第一份工作離職後在因緣際會下赴澳洲打工，體驗在異地非專長工作的經驗，到過家具行搬重物的辛苦也體會過幾畝地農地採收的辛勞，</p>
+					<p>　　最後在義大利香腸工廠完成最後的挑戰，工廠老闆從我第一天上工開始就友善過並帶有一些歧視，天天挨罵也天天受傷，</p>
+					<p>　　但讓我願意繼續留下來的原因是老闆自己會身先士卒，所以我當時的目標就是做到老闆可以認同我的努力，在工廠內不只追求速度也求品質，讓我對工作應有的態度有重新的認識。</p>
 				</div>
 			</div>
 		</div>
@@ -268,24 +269,36 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<a data-toggle="collapse" data-parent="#exp_root_0" href="#exp_0_1">
-								安控元件桌面應用程式
+								安控元件開發維護(執行中)
 							</a>
 						</div>
 						<div class="panel-collapse collapse" id="exp_0_1">
 							<div class="panel-body">
-							　　為了實現網頁可對軟硬體的憑證的操作需求而設計的桌面軟體，透過Websocket與瀏覽器的溝通來達到與客戶端元件的操作，目前運行於北市府、法務部、富邦、中信等機關。
+								　　提供網頁開發者可透過提供的Javascript api，進行快速開發憑證相關應用操作，目前運行於金融與政府機關。
 							</div>
 						</div>
 					</div>
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<a data-toggle="collapse" data-parent="#exp_root_0" href="#exp_0_2">
-								臺北卡3.0網站設計
+								臺北卡3.0開發維護
 							</a>
 						</div>
 						<div class="panel-collapse collapse" id="exp_0_2">
 							<div class="panel-body">
-							　　北市府推行臺北卡數位化為虛擬卡，透過實名認證可整合多項卡證，此專案我負責前端各項設計與安控元件的整合，未來推行成功將有機會再與其他縣市合作。
+								　　北市府推行臺北卡數位化為虛擬卡，透過實名認證可整合多項卡證。
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a data-toggle="collapse" data-parent="#exp_root_0" href="#exp_0_3">
+								臺北通開發維護(執行中)
+							</a>
+						</div>
+						<div class="panel-collapse collapse" id="exp_0_3">
+							<div class="panel-body">
+								　　「臺北卡3.0」為了擴展更多業務，改名為「臺北通」，重新審視所有項目，包含形象重新設計，重心從網站轉為APP。
 							</div>
 						</div>
 					</div>
@@ -316,36 +329,36 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<a data-toggle="collapse" data-parent="#exp_root_1" href="#exp_1_1">
-								總務、工務、資訊採購系統
+								PMS採購系統開發
 							</a>
 						</div>
 						<div class="panel-collapse collapse" id="exp_1_1">
 							<div class="panel-body">
-							　　出社會後第一份工作在零售業寶雅擔任工程師，選擇零售業是希望可以接觸到不同領域，原本應徵計畫是使用Oracle Jdeveloper開發新的ERP系統，但不久計畫腰斬，轉而使用公司所採購的訊光EEP2010使用MS Visual Studio .net(C#)開發總務、工務、資訊三合一部門採購系統，開啟學習C#之路，由於先前有Java的經驗，學習C#沒有花太多的時間，困難的在於三部門需求的整合，由於一開始沒有意識到溝通的重要性導致第一次重做，第二次重做是沒意識到使用者不太了解自己的需求，最後一次在足夠的溝通下、也到分店現場觀察、再參考政府所使用的標案軟體，才設計出符合各種需求的系統。
+								　　由於總務、工務、資訊採購項目複雜且費用龐大，公司希望這三個部門採購獨立於商品採購之外，並與會計傳票系統結合出帳，節省原本採購過程中金額計算、簽核與查帳時間。
 							</div>
 						</div>
 					</div>
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<a data-toggle="collapse" data-parent="#exp_root_1" href="#exp_1_2">
-								導入IBM Notes置換舊版EIP
+								IBM Notes 導入 EIP 設計
 							</a>
 						</div>
 						<div class="panel-collapse collapse" id="exp_1_2">
 							<div class="panel-body">
-							　　除了上述的系統，在職期間由於公司的EIP系統因公司成長不再符合使用，所以政策希望導入IBM Notes來解決人數及人事作業上的壓力，因此成為此專案負責人對廠商的窗口，重新製作平常所使用的資訊頁面、也把人事請假、加班、排班、未打卡、差旅分製作成員工可自行操作的頁面，除了與相關部門溝通釐清所有的作業流程外，也研究由Powerbuilder所寫的人事系統原始碼，重寫成procedure建立在Oracle資料庫裡，讓廠商只需照我寫的文件流程呼叫，節省寫一個新的人事系統與適應公司資料庫的時間。
+								　　業務蒸蒸日上，現行EIP簽呈系統已不敷使用，故導入IBM Notes 客製資訊頁面入口，結合新簽核作業流程與人資系統，改善原有空白簽呈到處飛的情況、分店店長排班困難、員工請假E化、員工可自行查詢出缺勤記錄。
 							</div>
 						</div>
 					</div>
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<a data-toggle="collapse" data-parent="#exp_root_1" href="#exp_1_3">
-								管理維護設備
+								支援 MIS 作業
 							</a>
 						</div>
 						<div class="panel-collapse collapse" id="exp_1_3">
 							<div class="panel-body">
-							　　在寶雅除了上述專案外，還有一些零星的瑣事，如賣場商品資料的資料庫更新、推行APP時會員資料的接口、更甚是維護電腦、無線網路、共用硬碟、投影機等等，雖然會拖延一些自己的時間，但對我來說每一樣遇到的事情都是學習機會，回想起剛進去時股價還是30塊的公司，離開時已經是高不可攀的境界。
+								　　賣場商品資料的資料庫更新、維護電腦、無線網路、共用硬碟、投影機等設備。
 							</div>
 						</div>
 					</div>
@@ -365,12 +378,12 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<a data-toggle="collapse" data-parent="#exp_root_2" href="#exp_2_1">
-								Crossow sensor應用
+								Crossbow sensor 應用
 							</a>
 						</div>
 						<div class="panel-collapse collapse" id="exp_2_1">
 							<div class="panel-body">
-							　　大學畢業專題為crossbow所開發的sensor實做應用，在當時智慧手機尚未普的年代正流行的是RFID，但沒想到現今反而是sensor較為廣泛運用，不過當時對於未來的趨勢尚未明朗，我們不敢貿然下時間學習crossbow所開發語言nesC去控制sensor，所以我們決定利用Java來驅動sensor實作專題，把方向著重於Java學習、Java與硬體的結合，最後克服在沒有開放連接原始碼的情況下，寫usb連接sensor接收傳來的資料，再配合資料做過濾解碼，最後結合視窗、資料庫與網頁成為我們的第一個軟體。
+								　　研究 crossbow sensor 傳遞原理及編程應用，並以智慧居家看護系統展示其用途。
 							</div>
 						</div>
 					</div>
@@ -395,7 +408,7 @@
 						</div>
 						<div class="panel-collapse collapse" id="exp_3_1">
 							<div class="panel-body">
-								　　在求學期間應徵Kingnet網路公司的裝機工程師，很幸運學習到大樓整體網路的建置方法、到客戶家中佈線安裝網路，雖然系上主學程為網際網路但這些經驗是無法在學校能夠學習到，此外也讓我有更多的經驗在與客戶的應對進退技巧。
+								　　學習大樓網路建置、家庭網路佈線，除了能獲得本科系外的實戰經驗，此份工作更帶給我許多與客戶的溝通經驗。
 							</div>
 						</div>
 					</div>
@@ -440,51 +453,59 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner slideanim" role="listbox">
 					<div class="item active">
-						<a href="https://www.slideshare.net/secret/tfS8qdjLALV0Ez" target="_blank"><img src="images/projects/taipei.jpg" width="1057" height="648"></a>
+						<a href="https://www.slideshare.net/secret/33KA8IagfQmytW" target="_blank"><img src="images/projects/taipeipass.png" width="1057" height="648"></a>
 						<div class="carousel-caption">
-							<h3><span>&nbsp;臺北卡3.0&nbsp;</span></h3>
-							<h4><span>&nbsp;前端網頁設計、安控元件整合&nbsp;</span></h4>
-							<p><a class="btn btn-large btn-danger" href="https://www.slideshare.net/secret/tfS8qdjLALV0Ez" target="_blank">詳細說明</a></p>
+							<h3><span>&nbsp;臺北通&nbsp;</span></h3>
+							<h4><span>&nbsp;場館優惠、防疫通關&nbsp;</span></h4>
+							<p><a class="btn btn-large btn-danger" href="https://www.slideshare.net/secret/33KA8IagfQmytW" target="_blank">詳細說明</a></p>
 						</div>
 					</div>
 					<div class="item">
-							<a href="https://www.slideshare.net/secret/tqJwk9UVKk8lod" target="_blank"><img src="images/projects/security.jpg" width="1057" height="648"></a>
+						<a href="https://www.slideshare.net/secret/2BNoj0eWCpnrjJ" target="_blank"><img src="images/projects/taipei.jpg" width="1057" height="648"></a>
+						<div class="carousel-caption">
+							<h3><span>&nbsp;臺北卡3.0&nbsp;</span></h3>
+							<h4><span>&nbsp;實名認證、卡證整合&nbsp;</span></h4>
+							<p><a class="btn btn-large btn-danger" href="https://www.slideshare.net/secret/2BNoj0eWCpnrjJ" target="_blank">詳細說明</a></p>
+						</div>
+					</div>
+					<div class="item">
+							<a href="https://www.slideshare.net/secret/7AhkTzqH40rac5" target="_blank"><img src="images/projects/security.jpg" width="1057" height="648"></a>
 							<div class="carousel-caption">
 								<h3><span>&nbsp;安控元件&nbsp;</span></h3>
-								<h4><span>&nbsp;Windows桌面應用程式XWebsocket&nbsp;</span></h4>
-								<p><a class="btn btn-large btn-danger" href="https://www.slideshare.net/secret/tqJwk9UVKk8lod" target="_blank">詳細說明</a></p>
+								<h4><span>&nbsp;PKI開發、網頁應用&nbsp;</span></h4>
+								<p><a class="btn btn-large btn-danger" href="https://www.slideshare.net/secret/7AhkTzqH40rac5" target="_blank">詳細說明</a></p>
 							</div>
 						</div>
 					<div class="item">
-						<a href="https://cp293900.github.io/PMS/index.html" target="_blank"><img src="images/projects/pms.jpg" width="1057" height="648"></a>
+						<a href="https://www.slideshare.net/secret/ABBJoej4SGVeO3" target="_blank"><img src="images/projects/pms.jpg" width="1057" height="648"></a>
 						<div class="carousel-caption">
 							<h3><span>&nbsp;PMS採購系統&nbsp;</span></h3>
 							<h4><span>&nbsp;總務、工務、資訊採購系統&nbsp;</span></h4>
-							<p><a class="btn btn-large btn-danger" href="https://cp293900.github.io/PMS/index.html" target="_blank">詳細說明</a></p>
+							<p><a class="btn btn-large btn-danger" href="https://www.slideshare.net/secret/ABBJoej4SGVeO3" target="_blank">詳細說明</a></p>
 						</div>
 					</div>
 					<div class="item">
-						<img src="images/projects/ibmnotes.jpg" width="1057" height="648">
+						<a href="https://www.slideshare.net/secret/Ao58DKwfYq5Pu4" target="_blank"><img src="images/projects/ibmnotes.jpg" width="1057" height="648"></a>
 						<div class="carousel-caption">
-							<h3><span>&nbsp;Poya IBM Notes EIP&nbsp;</span></h3>
-							<h4><span>&nbsp;導入IBM Notes置換舊版EIP&nbsp;</span></h4>
-							<p><a class="btn btn-large btn-danger" href="http://www.slideshare.net/cp293900/poya-ibm-notes" target="_blank">詳細說明</a></p>
+							<h3><span>&nbsp;IBM Notes EIP&nbsp;</span></h3>
+							<h4><span>&nbsp;整合人事、汰舊換新&nbsp;</span></h4>
+							<p><a class="btn btn-large btn-danger" href="https://www.slideshare.net/secret/Ao58DKwfYq5Pu4" target="_blank">詳細說明</a></p>
 						</div>
 					</div>
 					<div class="item">
-						<img src="images/projects/darenmobile.jpg" width="1057" height="648">
+						<a href="https://www.slideshare.net/secret/G58Trmy6k8ZzUF" target="_blank"><img src="images/projects/darenmobile.jpg" width="1057" height="648"></a>
 						<div class="carousel-caption">
-							<h3><span>&nbsp;DarenMobile&nbsp;</span></h3>
-							<h4><span>&nbsp;網頁專題&nbsp;</span></h4>
-							<p><a class="btn btn-large btn-danger" href="http://www.slideshare.net/cp293900/daren-mobile-64857863" target="_blank">詳細說明</a></p>
+							<h3><span>&nbsp;上課專題&nbsp;</span></h3>
+							<h4><span>&nbsp;初試啼聲、牛刀小試&nbsp;</span></h4>
+							<p><a class="btn btn-large btn-danger" href="https://www.slideshare.net/secret/G58Trmy6k8ZzUF" target="_blank">詳細說明</a></p>
 						</div>
 					</div>
 					<div class="item">
-						<img src="images/projects/crossbow.jpg" width="1057" height="648">
+						<a href="https://www.slideshare.net/secret/dETjmnAPHOHdZj" target="_blank"><img src="images/projects/crossbow.jpg" width="1057" height="648"></a>
 						<div class="carousel-caption">
 							<h3><span>&nbsp;居家看護系統&nbsp;</span></h3>
-							<h4><span>&nbsp;Crossbow sensor應用&nbsp;</span></h4>
-							<p><a class="btn btn-large btn-danger" href="http://www.slideshare.net/cp293900/crossbow-sensor-project" target="_blank">詳細說明</a></p>
+							<h4><span>&nbsp;畢業專題、物聯應用&nbsp;</span></h4>
+							<p><a class="btn btn-large btn-danger" href="https://www.slideshare.net/secret/dETjmnAPHOHdZj" target="_blank">詳細說明</a></p>
 						</div>
 					</div>
 				</div>
@@ -517,7 +538,7 @@
 			</div>
 			<div class="tab-content">
 				<div class="tab-pane fade in active" id="video">
-					<p>　　大學期間加入逢甲大學電視台志工，除了能了解業界新聞製作並製作校園新聞外，也能接觸許多學校大型表演等活動，在值班時間外也能製作屬於自己的作品，嘗試做導演、編劇、攝影、剪輯、演員，投稿比賽也有不錯的成績，每一次累積的經驗渴望成就未來創意的發想。</p>
+					<p>　　大學期間加入逢甲大學電視台志工，了解新聞製作並製作校園新聞影片、接觸許多學校大型表演等活動，在志工值班時間外也能製作屬於自己的作品，嘗試做導演、編劇、攝影、剪輯、演員，投稿比賽也有不錯的成績，培養創造力與創意發想的能力。</p>
 					<div class="row">
 						<div class="col-sm-3">
 							<div class="thumbnail">
@@ -532,7 +553,7 @@
 								<img src="images/video/recruitment.jpg">
 								<p>宣傳片</p>
 								<p><strong>招生說明</strong></p>
-								<button class="btn btn-danger" data-toggle="modal" data-target="#youtube_video" id="btn_recruitment" onclick="setModalVimeoURL(this)">播放</button>
+								<button class="btn btn-danger" data-toggle="modal" data-target="#youtube_video" id="btn_recruitment" onclick="setModalYoutubeURL(this)">播放</button>
 							</div>
 						</div>
 						<div class="col-sm-3">
@@ -578,7 +599,7 @@
 					</div>
 				</div>
 				<div class="tab-pane fade" id="sport">
-					<p>　　運動方面，在高中、大學都與足球形影不離，甚至加入社團與校隊，但現在轉向越野跑訓練向各種山況小徑奔馳，在運動的過程中可以感受到煎熬，但結束了就是成就感，也是鍛鍊永不放棄的首選興趣。</p>
+					<p>　　運動方面，在高中、大學都與足球形影不離，甚至加入社團與校隊，現在轉向越野跑訓練向各種山況小徑奔馳，在運動的過程中可以感受煎熬、鍛鍊不放棄的精神。</p>
 					<div class="row">
 						<div class="col-sm-4">
 							<img src="images/sport/hiking.jpg" class="img-responsive" width="378" height="280">
